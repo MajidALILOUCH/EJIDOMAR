@@ -159,7 +159,7 @@ body {
   position: absolute;
   background-color: var(--rich-black-fogra-29);
   height: 3px;
-  width: 150px;
+  width: 100px;
   bottom: -25px;
   left: 50%;
   transform: translateX(-50%);
@@ -839,11 +839,87 @@ body {
 }
 
 /*-----------------------------------*\
- * #PRODUCTS
+ * #nosotros
 \*-----------------------------------*/
 
-.product .section-title {
+.nosotros {
+  padding-top: 120px;
+}
+
+.nosotros h2 {
+  margin-bottom: 10px;
+}
+
+.nosotros h2::after {
+  bottom: -65px;
+}
+
+.nosotros h2 + p {
   text-align: center;
+  text-transform: capitalize;
+  font-size: 22px;
+  color: #777;
+  margin-bottom: 80px;
+}
+
+.nosotros .nosotros-content p {
+  font-family: var(--ff-roboto);
+  line-height: 1.8;
+  color: var(--onyx);
+  margin-bottom: 40px;
+}
+
+.nosotros .nosotros-content > img {
+  max-width: 100%;
+  margin: 0 auto 40px;
+}
+
+.nosotros .nosotros-content .nosotros-images {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.nosotros .nosotros-content .nosotros-images > div:first-of-type img {
+  height: 250px;
+  width: 100%;
+  max-width: 100%;
+}
+
+.nosotros
+  .nosotros-content
+  .nosotros-images
+  > div:first-of-type
+  img:first-of-type {
+  margin-bottom: 5px;
+}
+
+.nosotros .nosotros-content .nosotros-images > div:last-of-type img {
+  height: 100%;
+  max-width: 100%;
+}
+
+/*-----------------------------------*\
+ * #PRODUCT
+\*-----------------------------------*/
+
+.product {
+  padding-top: 120px;
+}
+
+.product h2 {
+  margin-bottom: 10px;
+}
+
+.product h2::after {
+  bottom: -65px;
+}
+
+.product h2 + p {
+  text-align: center;
+  font-size: 22px;
+  color: #777;
   margin-bottom: 80px;
 }
 
@@ -1347,6 +1423,14 @@ a.footer-link:is(:hover, :focus) {
 
   .marcas-list .marcas-item {
     min-width: 16.666%;
+  }
+
+  /**
+   * nosotros
+   */
+
+  .nosotros .nosotros-content .nosotros-images {
+    flex-direction: row;
   }
 
   /**

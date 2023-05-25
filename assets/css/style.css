@@ -578,7 +578,7 @@ body {
 \*-----------------------------------*/
 
 .hero {
-  background-image: url("./assets/images/hero-banner.jpg");
+  background-image: url("../images/hero-banner.jpg");
   position: relative;
   background-repeat: no-repeat;
   background-size: cover;

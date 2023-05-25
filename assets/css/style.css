@@ -578,7 +578,7 @@ body {
 \*-----------------------------------*/
 
 .hero {
-  background-image: url("/assets/images/hero-banner1.jpg");
+  background-image: url("/assets/images/hero-banner.jpg");
   position: relative;
   background-repeat: no-repeat;
   background-size: cover;
@@ -625,7 +625,7 @@ body {
 \*-----------------------------------*/
 
 .main-products-card {
-  height: 350px;
+  height: 325px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -668,7 +668,7 @@ body {
 
 .main-products-card img {
   max-width: 100%;
-  width: 220px;
+  width: 190px;
 }
 
 /*-----------------------------------*\

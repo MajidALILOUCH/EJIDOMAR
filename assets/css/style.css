@@ -284,6 +284,7 @@ body {
 
 .product-card .card-title {
   margin-bottom: 12px;
+  text-transform: capitalize;
 }
 
 /*-----------------------------------*\

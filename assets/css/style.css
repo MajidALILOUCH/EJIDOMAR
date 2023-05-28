@@ -238,12 +238,20 @@ body {
   background: var(--white);
   border-radius: 20px;
   outline: 2px solid var(--bittersweet);
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
 }
 
 .has-scrollbar::-webkit-scrollbar-thumb {
   background: var(--bittersweet);
   border: 2px solid var(--white);
   border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
 }
 
 .has-scrollbar::-webkit-scrollbar-button {
@@ -263,10 +271,18 @@ body {
   object-fit: contain;
   object-position: center;
   transition: var(--transition-2);
+  -webkit-transition: var(--transition-2);
+  -moz-transition: var(--transition-2);
+  -ms-transition: var(--transition-2);
+  -o-transition: var(--transition-2);
 }
 
 .product-card:is(:hover, :focus) .image-contain {
   transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+  -moz-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  -o-transform: scale(1.1);
 }
 
 .card-content {
@@ -514,39 +530,6 @@ body {
   justify-content: space-between;
   align-items: center;
   padding-block: 45px 25px;
-}
-
-.main-products-list {
-  display: flex;
-  gap: 25px;
-  overflow-x: auto;
-  padding-bottom: 20px;
-  scroll-snap-type: x mandatory;
-}
-
-.main-products-list > li {
-  min-width: 100%;
-  scroll-snap-align: start;
-}
-
-.main-products-list::-webkit-scrollbar {
-  height: 10px;
-}
-
-.main-products-list::-webkit-scrollbar-track {
-  background: var(--white);
-  border-radius: 20px;
-  outline: 2px solid var(--bittersweet);
-}
-
-.main-products-list::-webkit-scrollbar-thumb {
-  background: var(--bittersweet);
-  border: 2px solid var(--white);
-  border-radius: 20px;
-}
-
-.main-products-list::-webkit-scrollbar-button {
-  width: calc(25% - 40px);
 }
 
 .main-products-card img {

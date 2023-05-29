@@ -301,6 +301,7 @@ body {
 .product-card .card-title {
   margin-bottom: 12px;
   text-transform: capitalize;
+  font-size: 23px;
 }
 
 /*-----------------------------------*\
@@ -822,6 +823,36 @@ body {
 .product-list .product-item img {
   width: 200px;
   margin: auto;
+}
+
+/*-----------------------------------*\
+ * #quality
+\*-----------------------------------*/
+
+.quality {
+  padding-top: 120px;
+}
+
+.quality h2 {
+  margin-bottom: 10px;
+}
+
+.quality h2::after {
+  bottom: -65px;
+}
+
+.quality h2 + p {
+  text-align: center;
+  font-size: 22px;
+  color: #777;
+  margin-bottom: 80px;
+}
+
+.quality .content p {
+  font-family: var(--ff-roboto);
+  line-height: 1.8;
+  color: var(--onyx);
+  margin-bottom: 20px;
 }
 
 /*-----------------------------------*\

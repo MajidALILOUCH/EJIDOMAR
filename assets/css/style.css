@@ -25,9 +25,6 @@
    * typography
    */
 
-  --ff-roboto: "Roboto", sans-serif;
-  --ff-josefin-sans: "Josefin Sans", sans-serif;
-
   --fs-1: 3rem;
   --fs-2: 2.6rem;
   --fs-3: 2.2rem;
@@ -109,12 +106,12 @@ address {
 }
 
 html {
-  font-family: var(--ff-josefin-sans);
   font-size: 10px;
   scroll-behavior: smooth;
 }
 
 body {
+  font-family: "Roboto", sans-serif;
   background: var(--white);
   font-size: 1.6rem;
   padding-block-start: 90px;
@@ -291,7 +288,6 @@ body {
 }
 
 .card-cat {
-  font-family: var(--ff-roboto);
   text-transform: capitalize;
   color: var(--onyx);
   font-size: var(--fs-7);
@@ -353,7 +349,6 @@ body {
   max-width: 270px;
   height: 100%;
   border-right: 3px solid var(--rich-black-fogra-29);
-  font-family: var(--ff-roboto);
   overflow-y: auto;
   overscroll-behavior: contain;
   z-index: 2;
@@ -513,7 +508,6 @@ body {
 
 .hero-text {
   color: var(--white);
-  font-family: var(--ff-roboto);
   font-size: var(--fs-6);
   line-height: 1.8;
   max-width: 46ch;
@@ -602,7 +596,6 @@ body {
 }
 
 .empresa .content .info p {
-  font-family: var(--ff-roboto);
   line-height: 1.8;
 }
 
@@ -730,7 +723,6 @@ body {
 }
 
 .nosotros .nosotros-content p {
-  font-family: var(--ff-roboto);
   line-height: 1.8;
   color: var(--onyx);
   margin-bottom: 40px;
@@ -802,7 +794,6 @@ body {
 .filter-btn {
   color: var(--onyx);
   padding: 10px 16px;
-  font-family: var(--ff-roboto);
   font-size: var(--fs-7);
   font-weight: var(--fw-500);
   border: 1px solid var(--gainsboro);
@@ -848,20 +839,124 @@ body {
   margin-bottom: 80px;
 }
 
-.quality .content p {
-  font-family: var(--ff-roboto);
+.quality .content > p {
   line-height: 1.8;
   color: var(--onyx);
   margin-bottom: 20px;
 }
 
+.quality .content > p:last-of-type {
+  margin-bottom: 50px;
+}
+
+.quality .content .certificacion:not(:last-child) {
+  margin-bottom: 40px;
+}
+
+.quality .content .certificacion h3 {
+  font-size: 23px;
+  font-weight: 400;
+  margin-bottom: 25px;
+}
+
+@media (max-width: 767px) {
+  .quality .content .certificacion h3 {
+    text-align: center;
+  }
+}
+
+.quality .content .certificacion .info {
+  display: flex;
+  gap: 30px;
+}
+
+.quality .content .certificacion .info img {
+  max-width: 100%;
+  width: 130px;
+}
+
+@media (max-width: 767px) {
+  .quality .content .certificacion .info {
+    flex-direction: column;
+    text-align: center;
+  }
+  .quality .content .certificacion .info img {
+    margin: auto;
+  }
+}
+
+.quality .content .certificacion .info .text {
+  width: 100%;
+  line-height: 1.8;
+  color: var(--onyx);
+}
+
+/*-----------------------------------*\
+ * #contact
+\*-----------------------------------*/
+
+.contact .container .form-holder h2 {
+  color: black;
+  font-size: 30px;
+  margin-bottom: 50px;
+}
+.contact .container .form-holder form {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+.contact .container .form-holder form .input-holder {
+  width: calc(50% - 10px);
+}
+@media (max-width: 767px) {
+  .contact .container .form-holder form .input-holder {
+    width: 100%;
+  }
+}
+.contact .container .form-holder form .textarea-holder {
+  width: 100%;
+}
+.contact .container .form-holder form label {
+  text-transform: capitalize;
+  font-size: 18px;
+  font-weight: 400;
+}
+.contact .container .form-holder form .main-input {
+  width: 100%;
+  margin-top: 15px;
+  padding: 20px;
+  border-radius: 10px;
+  border: 1px solid #ddd;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+.contact .container .form-holder form .main-input:focus {
+  outline: none;
+}
+.contact .container .form-holder form textarea {
+  height: 200px;
+  resize: none;
+}
+.contact .container .form-holder form input[type="submit"] {
+  border: 0;
+  padding: 15px 40px;
+  width: fit-content;
+  background-color: var(--bittersweet);
+  color: white;
+  cursor: pointer;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+
 /*-----------------------------------*\
  * #FOOTER
 \*-----------------------------------*/
-
-.footer {
-  font-family: var(--ff-roboto);
-}
 
 .footer-top {
   background: var(--cultured);
@@ -899,7 +994,6 @@ body {
 .footer-list-title {
   position: relative;
   color: var(--rich-black-fogra-29);
-  font-family: var(--ff-josefin-sans);
   font-size: var(--fs-3);
   font-weight: var(--fw-700);
   margin-bottom: 25px;
@@ -978,7 +1072,6 @@ a.footer-link:is(:hover, :focus) {
   top: 0;
   bottom: 0;
   right: 0;
-  font-family: var(--ff-josefin-sans);
   font-size: var(--fs-6);
   font-weight: var(--fw-600);
   padding-inline: 20px;
@@ -1253,7 +1346,6 @@ a.footer-link:is(:hover, :focus) {
   }
 
   .navbar-link {
-    font-family: var(--ff-roboto);
     font-weight: var(--fw-500);
   }
 

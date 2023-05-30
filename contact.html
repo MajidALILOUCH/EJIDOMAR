@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contacto | EJIDOMAR</title>
+
+    <!-- 
+    - favicon
+  -->
+    <link rel="shortcut icon" href="./favicon.png" type="image/png" />
+
+    <!-- 
+    - custom css link
+  -->
+    <link rel="stylesheet" href="./assets/css/style.css" />
+
+    <!-- 
+    - google font link
+  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;500;600;700&family=Roboto:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body id="top">
+    <!-- 
+    - #HEADER
+  -->
+
+    <header class="header" data-header>
+      <div class="container">
+        <div class="overlay" data-overlay></div>
+
+        <a href="index.html" class="logo">
+          <img src="./assets/images/logo.png" width="160" alt="EJIDOMAR logo" />
+        </a>
+
+        <button class="nav-open-btn" data-nav-open-btn aria-label="Open Menu">
+          <ion-icon name="menu-outline"></ion-icon>
+        </button>
+
+        <nav class="navbar" data-navbar>
+          <button
+            class="nav-close-btn"
+            data-nav-close-btn
+            aria-label="Close Menu"
+          >
+            <ion-icon name="close-outline"></ion-icon>
+          </button>
+
+          <a href="#" class="logo">
+            <img
+              src="./assets/images/logo.png"
+              width="190"
+              height="auto"
+              alt="EJIDOMAR logo"
+            />
+          </a>
+
+          <ul class="navbar-list">
+            <li class="navbar-item">
+              <a href="index.html" class="navbar-link">Inicio</a>
+            </li>
+
+            <li class="navbar-item">
+              <a href="about.html" class="navbar-link">Sobre Nosotros</a>
+            </li>
+
+            <li class="navbar-item">
+              <a href="products.html" class="navbar-link">Productos</a>
+            </li>
+
+            <li class="navbar-item">
+              <a href="quality.html" class="navbar-link">Calidad</a>
+            </li>
+
+            <li class="navbar-item">
+              <a href="contact.html" class="navbar-link">Contacto</a>
+            </li>
+          </ul>
+
+          <ul class="nav-action-list">
+            <li>
+              <button class="nav-action-btn">
+                <ion-icon name="search-outline" aria-hidden="true"></ion-icon>
+
+                <span class="nav-action-text">Buscar</span>
+              </button>
+            </li>
+
+            <li>
+              <a href="#" class="nav-action-btn">
+                <ion-icon name="person-outline" aria-hidden="true"></ion-icon>
+
+                <span class="nav-action-text">Iniciar sesión / Registrar</span>
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <article>
+        <!-- 
+        - #map
+      -->
+        <section class="section map">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3197.768343500567!2d-2.8380303236477085!3d36.728124471758306!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd705c94d99f313b%3A0x5b2ade9090c596ff!2sCam.%20del%20Alcor%2C%2004715%2C%20Almer%C3%ADa%2C%20Spain!5e0!3m2!1sen!2sma!4v1685482813198!5m2!1sen!2sma"
+            width="100%"
+            height="450"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
+        </section>
+
+        <!-- 
+        - #contact
+      -->
+        <section class="section contact">
+          <div class="container">
+            <div class="form-holder">
+              <h2>Contacta con nosotros</h2>
+              <form action="">
+                <div class="input-holder">
+                  <label for="n">nombre</label>
+                  <input class="main-input" type="text" id="n" />
+                </div>
+                <div class="input-holder">
+                  <label for="a">apellido</label>
+                  <input class="main-input" type="text" id="a" />
+                </div>
+                <div class="input-holder">
+                  <label for="tel">telefono</label>
+                  <input class="main-input" type="text" id="tel" />
+                </div>
+                <div class="input-holder">
+                  <label for="email">email</label>
+                  <input class="main-input" type="email" id="email" />
+                </div>
+                <div class="input-holder">
+                  <label for="asunto">asunto</label>
+                  <input class="main-input" type="text" id="asunto" />
+                </div>
+                <div class="input-holder">
+                  <label for="tema">tema</label>
+                  <select class="main-input" id="tema">
+                    <option value="Administración">Administración</option>
+                    <option value="Comercial">Comercial</option>
+                    <option value="Técnico">Técnico</option>
+                  </select>
+                </div>
+                <div class="textarea-holder">
+                  <label for="msg">mensaje</label>
+                  <textarea class="main-input" id="msg"></textarea>
+                </div>
+                <input type="submit" value="Send" />
+              </form>
+            </div>
+          </div>
+        </section>
+      </article>
+    </main>
+
+    <!-- 
+    - #FOOTER
+  -->
+
+    <footer class="footer">
+      <div class="footer-top section">
+        <div class="container">
+          <div class="footer-brand">
+            <a href="#" class="logo">
+              <img
+                src="./assets/images/logo.png"
+                width="160"
+                height="auto"
+                alt="EJIDOMAR logo"
+              />
+            </a>
+
+            <ul class="social-list">
+              <li>
+                <a href="#" class="social-link">
+                  <ion-icon name="logo-facebook"></ion-icon>
+                </a>
+              </li>
+
+              <li>
+                <a href="#" class="social-link">
+                  <ion-icon name="logo-twitter"></ion-icon>
+                </a>
+              </li>
+
+              <li>
+                <a href="#" class="social-link">
+                  <ion-icon name="logo-pinterest"></ion-icon>
+                </a>
+              </li>
+
+              <li>
+                <a href="#" class="social-link">
+                  <ion-icon name="logo-linkedin"></ion-icon>
+                </a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="footer-link-box">
+            <ul class="footer-list">
+              <li>
+                <p class="footer-list-title">Contáctanos</p>
+              </li>
+
+              <li>
+                <address class="footer-link">
+                  <ion-icon name="location"></ion-icon>
+
+                  <span class="footer-link-text">
+                    Cam. del Alcor, 04715 El Ejido, Almería, Spain
+                  </span>
+                </address>
+              </li>
+
+              <li>
+                <a href="tel:+34612250137" class="footer-link">
+                  <ion-icon name="call"></ion-icon>
+
+                  <span class="footer-link-text">+34612250137</span>
+                </a>
+              </li>
+
+              <li>
+                <a href="mailto:EJIDOMAR@help.com" class="footer-link">
+                  <ion-icon name="mail"></ion-icon>
+
+                  <span class="footer-link-text">EJIDOMAR@help.com</span>
+                </a>
+              </li>
+            </ul>
+
+            <ul class="footer-list">
+              <li>
+                <p class="footer-list-title">Enlaces</p>
+              </li>
+
+              <li>
+                <a href="index.html" class="footer-link">
+                  <ion-icon name="chevron-forward-outline"></ion-icon>
+
+                  <span class="footer-link-text">Inicio </span>
+                </a>
+              </li>
+
+              <li>
+                <a href="about.html" class="footer-link">
+                  <ion-icon name="chevron-forward-outline"></ion-icon>
+
+                  <span class="footer-link-text">Nosotros</span>
+                </a>
+              </li>
+
+              <li>
+                <a href="products.html" class="footer-link">
+                  <ion-icon name="chevron-forward-outline"></ion-icon>
+
+                  <span class="footer-link-text">Productos</span>
+                </a>
+              </li>
+
+              <li>
+                <a href="quality.html" class="footer-link">
+                  <ion-icon name="chevron-forward-outline"></ion-icon>
+
+                  <span class="footer-link-text">Calidad</span>
+                </a>
+              </li>
+
+              <li>
+                <a href="contact.html" class="footer-link">
+                  <ion-icon name="chevron-forward-outline"></ion-icon>
+
+                  <span class="footer-link-text">Contacto</span>
+                </a>
+              </li>
+            </ul>
+
+            <div class="footer-list">
+              <p class="footer-list-title">Horario de apertura</p>
+
+              <table class="footer-table">
+                <tbody>
+                  <tr class="table-row">
+                    <th class="table-head" scope="row">Lun - Mie:</th>
+
+                    <td class="table-data">8AM - 10PM</td>
+                  </tr>
+
+                  <tr class="table-row">
+                    <th class="table-head" scope="row">Jue:</th>
+
+                    <td class="table-data">8AM - 7PM</td>
+                  </tr>
+
+                  <tr class="table-row">
+                    <th class="table-head" scope="row">Vie:</th>
+
+                    <td class="table-data">7AM - 12PM</td>
+                  </tr>
+
+                  <tr class="table-row">
+                    <th class="table-head" scope="row">Sab:</th>
+
+                    <td class="table-data">9AM - 8PM</td>
+                  </tr>
+
+                  <tr class="table-row">
+                    <th class="table-head" scope="row">Dom:</th>
+
+                    <td class="table-data">Cerrado</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+
+            <ul class="footer-list">
+              <li>
+                <p class="footer-list-title">Soporte</p>
+              </li>
+
+              <li>
+                <a href="#" class="footer-link">
+                  <span class="footer-link-text">Contacto </span>
+                </a>
+              </li>
+
+              <li>
+                <a href="#" class="footer-link">
+                  <span class="footer-link-text">Centro de soporte</span>
+                </a>
+              </li>
+
+              <li>
+                <a href="#" class="footer-link">
+                  <span class="footer-link-text">Opiniones</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div class="container">
+          <p class="copyright">
+            &copy; 2023 <a href="#" class="copyright-link">EJIDOMAR</a>. Todos
+            los derechos reservados
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- 
+    - #GO TO TOP
+  -->
+
+    <a href="#top" class="go-top-btn" data-go-top>
+      <ion-icon name="arrow-up-outline"></ion-icon>
+    </a>
+
+    <!-- 
+    - js links
+  -->
+    <script src="./assets/js/main.js"></script>
+
+    <!-- 
+    - ionicon link
+  -->
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
+</html>
